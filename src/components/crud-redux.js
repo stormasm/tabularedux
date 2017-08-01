@@ -118,7 +118,7 @@ class CRUDTable extends React.Component {
           formatters: [
             (value, { rowData }) => (
               <span
-                className="remove"
+                className="save"
                 onClick={() => this.props.saveRow(rowData.id)} style={{ cursor: 'pointer' }}
               >
               Save
