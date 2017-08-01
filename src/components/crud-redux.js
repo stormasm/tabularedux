@@ -3,7 +3,6 @@ The following example shows how to implement basic editing functionality with Re
 */
 
 import React from 'react';
-import { compose, createStore } from 'redux';
 import { connect } from 'react-redux';
 
 import * as Table from 'reactabular-table';
