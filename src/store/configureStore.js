@@ -63,6 +63,11 @@ const reducer = (state, action) => {
         });
       }
 
+    case 'SAVE_ROW':
+    if (index >= 0) {
+        console.log("Inside save row")
+    }
+
     default:
       return state;
   }

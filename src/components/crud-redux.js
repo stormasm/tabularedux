@@ -25,7 +25,11 @@ const actions = {
   confirmEdit: (property, value, id) => ({
     type: 'CONFIRM_EDIT',
     row: { property, value, id }
-  })
+  }),
+  saveRow: id => ({
+    type: 'SAVE_ROW',
+    row: { id }
+  }),
 };
 
 class CRUDTable extends React.Component {
@@ -103,7 +107,31 @@ class CRUDTable extends React.Component {
             )
           ]
         }
+      },
+      {
+        props: {
+          style: {
+            width: 50
+          }
+        },
+        cell: {
+          formatters: [
+            (value, { rowData }) => (
+              <span
+                className="remove"
+                onClick={() => this.props.saveRow(rowData.id)} style={{ cursor: 'pointer' }}
+              >
+              Save
+              </span>
+            )
+          ]
+        }
       }
+
+
+
+
+
     ];
   }
   render() {
