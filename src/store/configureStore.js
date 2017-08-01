@@ -65,7 +65,7 @@ const reducer = (state, action) => {
 
     case 'SAVE_ROW':
     if (index >= 0) {
-        console.log("Inside save row")
+        console.log(index,state[index])
     }
 
     default:
