@@ -2,11 +2,9 @@ import 'babel-core/polyfill';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import CRUDTable from './src/components/crud-redux';
-import configureStore from './store/configureStore';
+import ConnectedCRUDTable from './src/components/crud-redux';
 
 ReactDOM.render(
-  <CRUDTable />
+  <ConnectedCRUDTable />,
   document.getElementById('root')
 );

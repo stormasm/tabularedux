@@ -10,7 +10,7 @@ import * as Table from 'reactabular-table';
 import * as edit from 'react-edit';
 import uuid from 'uuid';
 
-import { generateRows } from './helpers';
+import { generateRows } from './../helpers';
 
 const schema = {
   type: 'object',
@@ -218,3 +218,5 @@ const ConnectedCRUDTable = connect(
 )(CRUDTable);
 
 <ConnectedCRUDTable store={store} />
+
+export default ConnectedCRUDTable
