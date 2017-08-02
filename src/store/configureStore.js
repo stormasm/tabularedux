@@ -38,7 +38,7 @@ function editProperty(rows, index, values) {
   return ret;
 }
 
-const reducer = (state, action) => {
+const rowreducer = (state, action) => {
   const row = action.row;
   const index = row && findIndex(state, { id: row.id });
 
@@ -79,8 +79,8 @@ const reducer = (state, action) => {
 };
 
 export default function configureStore() {
-//const store = createStore(reducer, generateRows(3, schema));
-  const store = createStore(reducer, generateRows(3, schema),
+//const store = createStore(rowreducer, generateRows(3, schema));
+  const store = createStore(rowreducer, generateRows(3, schema),
         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
   return store;
 }
