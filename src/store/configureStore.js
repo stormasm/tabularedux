@@ -79,6 +79,8 @@ const reducer = (state, action) => {
 };
 
 export default function configureStore() {
-  const store = createStore(reducer, generateRows(3, schema));
+//const store = createStore(reducer, generateRows(3, schema));
+  const store = createStore(reducer, generateRows(3, schema),
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
   return store;
 }
