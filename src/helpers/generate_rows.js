@@ -65,7 +65,7 @@ const generateRows = (amount, { definitions, properties }) => range(amount).map(
       },
       price: generators.number.bind(null, 0, 200),
       stock: generators.number.bind(null, 0, 2000),
-      salary: generators.number.bind(null, 0, 10000),
+      threadid: generators.number.bind(null, 0, 10000),
       age: generators.number.bind(null, 1, 100),
       active() {
         return sample([true, false]);

@@ -52,6 +52,15 @@ class CRUDTable extends React.Component {
     });
 
     return [
+    {
+      property: 'threadid',
+      header: {
+        label: 'ThreadId'
+      },
+      cell: {
+        transforms: [editable(edit.input({ props: { type: 'number' } }))]
+      }
+    },
       {
         property: 'name',
         header: {
@@ -68,15 +77,6 @@ class CRUDTable extends React.Component {
         },
         cell: {
           transforms: [editable(edit.input())]
-        }
-      },
-      {
-        property: 'salary',
-        header: {
-          label: 'Salary'
-        },
-        cell: {
-          transforms: [editable(edit.input({ props: { type: 'number' } }))]
         }
       },
       {

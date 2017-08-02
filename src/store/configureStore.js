@@ -8,20 +8,20 @@ const schema = {
     id: {
       type: 'string'
     },
+    threadid: {
+      type: 'integer'
+    },
     name: {
       type: 'string'
     },
     position: {
       type: 'string'
     },
-    salary: {
-      type: 'integer'
-    },
     active: {
       type: 'boolean'
     }
   },
-  required: ['id', 'name', 'position', 'salary', 'active']
+  required: ['id', 'threadid', 'name', 'position', 'active']
 };
 
 function editProperty(rows, index, values) {
