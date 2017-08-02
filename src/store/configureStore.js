@@ -11,7 +11,7 @@ const schema = {
     threadid: {
       type: 'integer'
     },
-    name: {
+    by: {
       type: 'string'
     },
     position: {

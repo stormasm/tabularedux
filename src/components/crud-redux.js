@@ -62,9 +62,9 @@ class CRUDTable extends React.Component {
       }
     },
       {
-        property: 'name',
+        property: 'by',
         header: {
-          label: 'Name'
+          label: 'By'
         },
         cell: {
           transforms: [editable(edit.input())]
@@ -153,6 +153,7 @@ class CRUDTable extends React.Component {
 
                 this.props.createRow();
               }}>Add new</button></td>
+              <td></td>
               <td></td>
               <td></td>
               <td></td>

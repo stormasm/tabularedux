@@ -31,7 +31,7 @@ const generateRows = (amount, { definitions, properties }) => range(amount).map(
           name: this.name()
         };
       },
-      name() {
+      by() {
         return `${sample(forenames)} ${sample(surnames)}`;
       },
       fullName() {
