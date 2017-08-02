@@ -52,8 +52,4 @@ const rowReducer = (state, action) => {
   return state;
 };
 
-const rootReducer = combineReducers({
-  rowReducer
-})
-
-export default rootReducer
+export default rowReducer

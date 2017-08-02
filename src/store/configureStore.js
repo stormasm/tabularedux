@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
 
 import { generateRows } from './../helpers';
-import rootReducer from './../reducers';
+import rowReducer from './../reducers';
 
 const schema = {
   type: 'object',
@@ -29,7 +29,7 @@ const schema = {
 };
 
 const configureStore = () => createStore(
-    rootReducer,
+    rowReducer,
     generateRows(3,schema),
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
