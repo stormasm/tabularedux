@@ -14,7 +14,10 @@ const schema = {
     by: {
       type: 'string'
     },
-    position: {
+    score: {
+      type: 'integer'
+    },
+    title: {
       type: 'string'
     },
     active: {

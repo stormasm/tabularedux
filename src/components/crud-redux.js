@@ -12,7 +12,7 @@ import uuid from 'uuid';
 const actions = {
   createRow: () => ({
     type: 'CREATE_ROW',
-    row: { name: 'John Doe', id: uuid.v4() }
+    row: { by: 'John Doe', id: uuid.v4() }
   }),
   deleteRow: id => ({
     type: 'DELETE_ROW',
@@ -71,9 +71,18 @@ class CRUDTable extends React.Component {
         }
       },
       {
-        property: 'position',
+        property: 'score',
         header: {
-          label: 'Position'
+          label: 'Score'
+        },
+        cell: {
+          transforms: [editable(edit.input({ props: { type: 'number' } }))]
+        }
+      },
+      {
+        property: 'title',
+        header: {
+          label: 'Title'
         },
         cell: {
           transforms: [editable(edit.input())]
@@ -153,6 +162,7 @@ class CRUDTable extends React.Component {
 
                 this.props.createRow();
               }}>Add new</button></td>
+              <td></td>
               <td></td>
               <td></td>
               <td></td>
