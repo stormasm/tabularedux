@@ -33,10 +33,26 @@ const my2genrows = () =>
     {
         "active":false,
         "by":"Homer Johnson",
-        "id":"dcf6cd91-8c29-4430-ae79-369f5b610567",
+        "id":"dcf6cd91-8b29-4430-ae79-369f5b610567",
         "score": 6212,
         "threadid": 3987,
         "title": "Boss"
+    },
+    {
+        "active":true,
+        "by":"Ralph Smith",
+        "id":"dcf6cd91-8c29-4430-ae79-369f5b610567",
+        "score": 7212,
+        "threadid": 4987,
+        "title": "Contractor"
+    },
+    {
+        "active":false,
+        "by":"Pete Domen",
+        "id":"dcf6cd91-8a29-4430-ae79-369f5b610567",
+        "score": 8212,
+        "threadid": 5987,
+        "title": "Student"
     }
     ]
 
