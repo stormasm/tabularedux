@@ -52,8 +52,6 @@ const rowReducer = (state = initialState.myrows, action) => {
     default:
       return state;
   }
-
-  return state;
 };
 
 export default rowReducer
