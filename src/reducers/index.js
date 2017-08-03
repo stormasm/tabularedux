@@ -12,7 +12,11 @@ const editProperty = (rows, index, values) => {
   return ret;
 }
 
-const rowReducer = (state, action) => {
+const initialState = {
+  myrows: []
+}
+
+const rowReducer = (state = initialState.myrows, action) => {
   const row = action.row;
   const index = row && findIndex(state, { id: row.id });
 
