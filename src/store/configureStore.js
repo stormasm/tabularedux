@@ -1,7 +1,7 @@
-import { createStore } from 'redux';
+import { createStore } from './../redux372';
 
 import { generateRows } from './../helpers';
-import rowReducer from './../reducers';
+import rootReducer from './../reducers';
 
 const schema = {
   type: 'object',
@@ -63,7 +63,7 @@ const mygenrows = () => {
 }
 
 const configureStore = () => createStore(
-    rowReducer,
+    rootReducer,
     //generateRows(3,schema),
     my2genrows(),
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

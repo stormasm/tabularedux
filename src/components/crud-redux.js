@@ -3,7 +3,7 @@ The following example shows how to implement basic editing functionality with Re
 */
 
 import React from 'react';
-import { connect } from 'react-redux';
+import { connect } from './../react-redux505';
 
 import * as Table from 'reactabular-table';
 import * as edit from 'react-edit';
@@ -136,11 +136,6 @@ class CRUDTable extends React.Component {
           ]
         }
       }
-
-
-
-
-
     ];
   }
   render() {

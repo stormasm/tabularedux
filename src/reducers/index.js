@@ -1,5 +1,5 @@
 import { cloneDeep, findIndex } from 'lodash';
-import { combineReducers } from 'redux'
+import { combineReducers } from './../redux372'
 
 const editProperty = (rows, index, values) => {
   // Skip mutation, there's likely a neater way to achieve this
@@ -12,11 +12,13 @@ const editProperty = (rows, index, values) => {
   return ret;
 }
 
+/*
 const initialState = {
   myrows: []
 }
+*/
 
-const rowReducer = (state = initialState.myrows, action) => {
+const rowReducer = (state = [], action) => {
   const row = action.row;
   const index = row && findIndex(state, { id: row.id });
 
@@ -54,4 +56,8 @@ const rowReducer = (state = initialState.myrows, action) => {
   }
 };
 
-export default rowReducer
+const rootReducer = combineReducers({
+  rowReducer
+})
+
+export default rootReducer

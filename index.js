@@ -2,7 +2,7 @@ import 'babel-core/polyfill';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+import { Provider } from './src/react-redux505';
 import ConnectedCRUDTable from './src/components/crud-redux';
 import configureStore from './src/store/configureStore';
 import { Flex, Box } from "grid-styled";
