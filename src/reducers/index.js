@@ -12,13 +12,11 @@ const editProperty = (rows, index, values) => {
   return ret;
 }
 
-/*
 const initialState = {
   myrows: []
 }
-*/
 
-const rowReducer = (state = [], action) => {
+const rowReducer = (state = initialState.myrows, action) => {
   const row = action.row;
   const index = row && findIndex(state, { id: row.id });
 
@@ -56,8 +54,4 @@ const rowReducer = (state = [], action) => {
   }
 };
 
-const rootReducer = combineReducers({
-  rowReducer
-})
-
-export default rootReducer
+export default rowReducer
